@@ -53,7 +53,7 @@
     <hr>
     <div id = "main">
         <hr>
-        <div id ="bio" class ="content">
+        <div id ="bio" class ="section">
             <h2><strong>MY BIO</strong></h2>
             <img src="../w1/images/Vietnam-Flag.png" alt="Vietnam flag" width="500" height="250">
             <p><b>My name is Andy Ho and I am currently 19 years old. My family is from Vietnam but during the late 1990s they met and moved to The United States in Rhode Island where they had me in 2004. I was born in Woonsocket and I moved to Warwick during the summer of fourth grade. I am currently studying at New England Institute of Technology as a Software Enginner major. I have always been interested in computers and the thought of "engineering" as a computer so when I discovered Software engineering, I decided to take it as a major at NEIT since it looked interesting to me and the salary looked really good. </b></p>
@@ -61,7 +61,7 @@
             <hr>
         </div><!---END OF BIO DIV-->
         
-        <div id="education" class ="content hide">
+        <div id="education" class ="section hide">
             <h2><strong>SCHOOLING</strong></h2>
             <ul>
                <li><i><a href="https://holliman.warwickschools.org/" target = "_blank">Holliman Elementary School</a></i></li>
@@ -71,7 +71,7 @@
             <hr>
         </div><!---END OF EDUCATION DIV-->
          
-        <div id ="hobbies" class="content hide">
+        <div id ="hobbies" class="section hide">
             <h2><strong>HOBBIES</strong></h2>
             <ol>
                 <li>Exercising</li>
@@ -89,26 +89,27 @@
     </div><!---END OF MAIN DIV-->
     <script>
         //JAVASCRIPT IN HERE
-        var a = Array.from(document.querySelectorAll(`a`));
-
-        for(let i=0; i<a.length; i++)
-        {  
-             a[i].addEventListener(`click`, hide)
-        }
-
-        function hide(e)
+        var a = Array.from(document.querySelectorAll(`a`))
+        var div = document.querySelectorAll(`.section`)
+        for (var i=0; i<a.length; i++)
         {
-             e.preventDefault();
+            a[i].addEventListener(`click`, press)
+        } 
 
-             var div = document.querySelectorAll(`.content`)
-   
-             for(let i=0; i<div.length; i++)
-             {
+        function press(e)
+        {
+            e.preventDefault()
+            
+            var index = a.indexOf(e.target)
+            
+            for(let i=0; i<div.length; i++)
+            {
                 div[i].classList.add(`hide`);
-             }
-   
-             div[a.indexOf(e.target)].classList.remove(`hide`);
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
         }
+        
     </script>
     
 </body>
