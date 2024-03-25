@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Week 1">
+    <meta name="author" content="Andy Ho">
+    <title>SE137 | W1 ASSIGNMENT</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: green;
+        }
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+        body {
+            background-color: rgb(189, 189, 97);
+        }
+        #nav {
+            text-align: center;
+            font-size: large;
+        }
+        .footer {
+            text-align: center;
+        }
+        .hide{
+            display: none;
+        }
+        hr{
+            border: 2px solid black;
+        }
+        img{
+            border: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Andy Ho</h1>
+    <hr>
+    <div id="nav">
+        <a href="#">BIO</a>
+        <a href="#">EDUCATION</a>
+        <a href="#">HOBBIES</a>
+    </div>
+    <hr>
+    <div id = "main">
+        <hr>
+        <div id ="bio" class ="content">
+            <h2><strong>MY BIO</strong></h2>
+            <img src="../w1/images/Vietnam-Flag.png" alt="Vietnam flag" width="500" height="250">
+            <p><b>My name is Andy Ho and I am currently 19 years old. My family is from Vietnam but during the late 1990s they met and moved to The United States in Rhode Island where they had me in 2004. I was born in Woonsocket and I moved to Warwick during the summer of fourth grade. I am currently studying at New England Institute of Technology as a Software Enginner major. I have always been interested in computers and the thought of "engineering" as a computer so when I discovered Software engineering, I decided to take it as a major at NEIT since it looked interesting to me and the salary looked really good. </b></p>
+            <p><b>When I was younger I was really shy, timid, and quiet. I did not like talking and wanted to be as isolated as possible since I would not have to talk or be the center of attention if I just stayed away. I guessing that the whole reason why I was shy and timid was because I was afraid of being judged, I was already judged for being different since I am Asian and I looked different. Social Media was not prevalent back then and being in a room full of young kids, it was easier to be the center of jokes. As I got older I realized that I did not want to be a shy and quiet person so now I a lot more talkative and more outgoing which leads to the person I am today.</b></p>
+            <hr>
+        </div><!---END OF BIO DIV-->
+        
+        <div id="education" class ="content hide">
+            <h2><strong>SCHOOLING</strong></h2>
+            <ul>
+               <li><i><a href="https://holliman.warwickschools.org/" target = "_blank">Holliman Elementary School</a></i></li>
+               <li><i><a href="https://veterans.warwickschools.org/" target = "_blank">Warwick Veterans Middle School</a></i></li>
+               <li><i><a href="https://phs.warwickschools.org/" target = "_blank">Pilgrim High School</a></i></li>
+            </ul>
+            <hr>
+        </div><!---END OF EDUCATION DIV-->
+         
+        <div id ="hobbies" class="content hide">
+            <h2><strong>HOBBIES</strong></h2>
+            <ol>
+                <li>Exercising</li>
+                <li>Playing Video Games</li>
+                <li>Watching Anime</li>
+            </ol>
+            <hr>
+        </div><!--END OF HOBBIES DIV-->
+         
+         <div class="footer">
+            <p>@2024 Andy Ho | W1 ASSIGNMENT</p>
+        </div><!---END OF FOOTER DIV-->
+  
+   
+    </div><!---END OF MAIN DIV-->
+    <script>
+        //JAVASCRIPT IN HERE
+        var a = Array.from(document.querySelectorAll(`a`));
+
+        for(let i=0; i<a.length; i++)
+        {  
+             a[i].addEventListener(`click`, hide)
+        }
+
+        function hide(e)
+        {
+             e.preventDefault();
+
+             var div = document.querySelectorAll(`.content`)
+   
+             for(let i=0; i<div.length; i++)
+             {
+                div[i].classList.add(`hide`);
+             }
+   
+             div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+    </script>
+    
+</body>
+</html>
