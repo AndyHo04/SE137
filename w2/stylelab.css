@@ -56,11 +56,11 @@ body {
     
 }
 .school{
-    background-image: url("C:/Users/andyh/OneDrive/Desktop/SE137/w2/images/School.jpg");
+    background-image: url("../w2/images/School.jpg");
     background-size: contain;
 }
 .hobby{
-    background-image: url("C:/Users/andyh/OneDrive/Desktop/SE137/w2/images/hobbies.png");
+    background-image: url("../w2/images/hobbies.png");
     background-size: contain;
     
 
