@@ -3,12 +3,17 @@
 
 h1 {
     margin-left: 670px;
-    color: rgb(236, 51, 51);
+    color: rgb(40, 122, 238);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
+    border: 3px solid grey;
+    width: 20%;
+    margin-left: 500px;
+    background-color: grey;
+    border-radius: 10px;
     text-align: center;
-    color: rgb(236, 51, 51);
+    color: rgb(10, 63, 136);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
@@ -88,7 +93,7 @@ ol{
     line-height:50px;
     
     
-    color: rgb(236, 51, 51);
+    color:rgb(40, 122, 238);
 
     box-shadow: 0 0 8px black;
 
