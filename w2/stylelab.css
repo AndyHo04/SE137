@@ -74,10 +74,13 @@ img{
 li{
     font-size: large;
     font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
 }
-ol{
+#hobbies li{
     border: 3px solid grey;
     background-color: grey;
+    border-radius: 10px;
+    width: 10%;
 }
 .buttons{
     width:130px;
