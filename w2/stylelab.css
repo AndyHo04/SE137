@@ -55,11 +55,11 @@ body {
 
     
 }
-#education{
+.school{
     background-image: url("C:/Users/andyh/OneDrive/Desktop/SE137/w2/images/School.jpg");
     background-size: contain;
 }
-#hobbies{
+.hobby{
     background-image: url("C:/Users/andyh/OneDrive/Desktop/SE137/w2/images/hobbies.png");
     background-size: contain;
     
