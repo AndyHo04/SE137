@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 h1 {
-    text-align: center;
+    margin-left: 670px;
     color: rgb(236, 51, 51);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -80,7 +80,7 @@ ol{
     padding: 15px;
     height:50px;
     margin-left:35px;
-    margin-right:35px;
+   
     text-decoration:none;
     font-size:20px;
     text-align:center;
