@@ -68,16 +68,17 @@ section{
     "farts farts"
     "img text";
     margin:20px;
+    border: 3px solid black;
 }
 section h2{
     grid-area: farts;
 }
 section img{
     grid-area: img;
+    
 }
 section p{
     grid-area: text;
     margin-left: 20px;
 }
-section img{}
 footer{}
