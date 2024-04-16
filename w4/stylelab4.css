@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body{
+    height:100%;
+}
+
+main{
+    border: 1px solid black;
+    display: grid;
+    width: 1820px;
+    height: 1080px;
+}
