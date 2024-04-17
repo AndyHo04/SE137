@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap');
+
+
+html{
+    height:100%;
+}
 
 body{
     height:100%;
@@ -9,4 +18,224 @@ main{
     display: grid;
     width: 1820px;
     height: 1080px;
+    background-color: rgb(40, 40,40);
+    grid-template-rows: 100px 920px 60px;
+   
+}
+
+header{
+    background-color: rgb(7,7,7);
+    width: 1820px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    color: white;
+}
+
+header h1{
+    width: 478px;
+    height: 50px;
+    color:rgb(187,9,8);
+    font-size: 48px;
+    font-weight: 400;
+    text-align: left;
+    
+    margin-left: 25px;
+    
+}
+
+header #icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+header #youtube{
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: rgb(187,9,8);
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+header #snapchat{
+    width: 60px;
+    height: 60px;
+    color: red;
+    background: black;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+header #twitter{
+    width: 69px;
+    height: 69px;
+    color: white;
+    background-color: rgb(187,9,8);
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+#content{
+    display: grid;
+    grid-template-areas: 
+    "banner banner"
+    "leftmod rightmod farRight";
+}
+
+#banner{
+    grid-area: banner;
+    width:1440px;
+    height:388px;
+    margin-right: 100px;
+
+}
+
+#farRight{
+    grid-area: farRight;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height:918px;
+    margin-left: 1460px;
+    background-color: rgb(57,57,57);
+}
+
+#campSign{
+    width:325px;
+    height:254px;
+    margin:30px 0 0 10px;
+}
+
+#underwater{
+    margin-top: 20px;
+}
+
+#timeline p{
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width:275px;
+    height:385px;
+    
+   
+}
+#timeline b{
+    color:rgb(252,3,3)
+}
+
+#left{
+    grid-area: leftMod;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 481px;
+    margin: 410px 0 0 20px;
+    background-color: rgb(57,57,57);
+    border-top: 5px solid rgb(187,9,8);
+}
+
+#left #poster{
+    width: 310px;
+    height: 478px;
+    margin: 0 20px 0 0;
+}
+
+#left #leftcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#left h2{
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    width: 353px;
+    height: 77px;
+    margin:0 16px 7px 0;
+    color:rgb(255, 29, 41);
+    border-bottom: 4px solid rgb(187,9,8);
+}
+#left p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 349px;
+    height: 216px;
+    color: white;
+    margin: 0 16px 15px 0;
+}
+
+#leftimg{
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+    /*margin:*/
+}
+.blueray{
+    width:117px;
+    height: 148px;
+    
+}
+.price{
+    width:191px;
+    height: 130px;
+   
+
+}
+
+#right{
+    grid-area: rightMod;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width:700px;
+    height: 481px;
+    margin: 410px 0 0 740px;
+    background-color: rgb(57,57,57);
+    border-top: 5px solid rgb(187,9,8);
+}
+
+#right img{
+    width: 631px;
+    height: 229px;
+    margin: 19px 0 0 35px;
+}
+
+#right p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-left: 24px;
+}
+
+
+
+footer{
+    background-color: rgb(7,7,7);
+    width: 1820px;
+    height: 60px;
+}
+
+footer p{
+    font-family: "Teko", sans-serif;
+    color: rgb(188, 188, 188);
+    font-weight: 400;
+    font-size: 12px;
+    margin:21px 0 0 25px
 }
