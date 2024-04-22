@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*
+main{
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top:100px;
+    left: 200px;
+}
+div{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;//has to be in relative parent for absolute to work//
+    left:100px;
+}
+*/
