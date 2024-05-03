@@ -8,25 +8,31 @@ function toggle(e)
    document.querySelector(`.tray`).classList.toggle(`hide`)
 }
 
+const activeTabName = document.querySelector(`#active-tab`)
+
 //Tab buttons are stored in an array
-var buttons = Array.from(document.querySelectorAll(`nav button`))
+var tabs = document.querySelectorAll(`.tab`)
+let activeTab = tabs[0]
+activeTab.classList.add(`active`)
+activeTabName.innerHTML = activeTab.textContent
 
 //Adds event listeners to all buttons in the array
-for(let i=0; i<buttons.length; i++)
+for(let i=0; i<tabs.length; i++)
 {
-   buttons[i].addEventListener(`click`, butts)
+   tabs[i].addEventListener(`click`, butts);
 }
 
 //removes the active class from all buttons and adds it to the one that was clicked
 //Adds tab name to the breadcrumbs
 function butts(e)
 {
-    console.log(e)
-    for(let i=0; i<buttons.length; i++)
+    for(let i=0; i<tabs.length; i++)
     {
-        buttons[i].classList.remove(`active`);
+        tabs[i].classList.remove(`active`);
     }
-    e.target.classList.add(`active`)
-    document.querySelector(`#breadcrumbs`).innerHTML= `<a href="#">${e.target.innerText}</a>`
-}
 
+    e.target.classList.add(`active`)
+
+    activeTab = e.target
+    activeTabName.innerHTML = activeTab.textContent
+}

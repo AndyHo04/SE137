@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html{
     height:100%;
@@ -16,7 +17,36 @@ main{
 header{
     height:23px;
     background-color:#505050;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
+
+header div{
+    display: flex;
+    flex-direction: row;
+    margin-top: -8px;
+}
+header p{
+    color: #E3E3E3;
+    margin-left: 15px;
+}
+header #start{
+    margin-left: 45px;
+}
+
+header #heading{
+    margin:auto;
+}
+header i{
+    height:13px;
+    margin-top: 13px;
+    color: #c3c3c3;
+}
+header i:hover{
+    color:white;
+}
+
 section{
     background-color:lime;
     height:100%;
@@ -26,22 +56,141 @@ aside{
     background-color:#505050;
     width:45px;
 }
+
+aside button{
+    background:none;
+    border: none;
+}
+aside button i{
+    margin-top:10px;
+    color: #c3c3c3;
+    height: 32px;
+    width: 26px;
+}
+aside button i:hover{
+    background-color:none;
+    color:white
+}
+
+p:hover{
+    color:white;
+}
+
+aside img{
+    width: 26px;
+    height: 32px;
+}
+.square{
+    margin-top: 10px;
+    margin-left: 12px;
+    width: 26px;
+    height: 32px;
+    color: #c3c3c3;
+
+}
+.square:hover{
+    color:white;
+}
+
+.trashcan{
+    color: #c3c3c3;
+    margin-left:15px;
+    margin-top:580px;
+    width:32px;
+    height:32px;
+}
+.trashcan:hover{
+    color:white;
+}
+    
+
 .tray{
     width:144px;
     min-width:144px;
-    background-color:#7b7575;
+    background-color:#373737;
     transition:all 1s;
     color:white;
     display:flex;
-    justify-content: flex-end;
+    flex-direction: column;
     overflow: hidden;
    
 }
 div.tray div{
     min-width:144px;
     box-sizing: border-box;
-    border:5px solid cyan;
 }
+
+.border {
+    border-top: 2px solid #7b7575;
+    border-bottom: 2px solid #7b7575;
+    width:116px;
+    margin-left:3px;
+    padding: 8px;
+    
+}
+
+
+details summary{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    list-style-image: url('../w6/images/sprites 11.png');
+    cursor: pointer;
+}
+
+
+
+
+details #file{
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+#file li{
+    margin-bottom: 10px;
+    text-indent: -20px;
+    color: #e3e3e3;    
+}
+#file li::before{
+   content: '\f15b';
+   font-family: 'Font Awesome 5 Free';
+   color:#e3e3e3;
+   font-weight: 900;
+   margin-right:10px
+}
+
+#file li:hover::before,
+#file li:hover {
+    color: #f5f5f5; /* Change this to the color you want */
+}
+
+details #otherstuff{
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+#otherstuff li{
+    margin-bottom: 10px;
+    text-indent: -20px;
+    color: #e3e3e3;
+}
+
+details #otherstuff li::before{
+    content: '\f06d';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right:10px;
+    color:#e3e3e3;
+}
+
+#otherstuff li:hover, 
+#otherstuff li:hover::before{
+    color: #ffffff;
+}
+
 .hide{
     width:0;
     min-width:0;
@@ -56,25 +205,87 @@ div.tray div{
 nav{
     height:34px;
     display:flex;
+    gap: 5px;
+   
 }
-button{
-    width:173px;
-    background-color:#c2c2c2;
-    border-radius: 0;
-    border:0 solid #161616;
-    margin-right:2px;
-    
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
 }
-button.active{
-    background-color:#161616;
+
+nav button p{
+    margin-top: 10px;
+    margin-right: 70px;
 }
-button:last-child{
-    margin:0;
+
+.tab {
+    display: flex;
+    width: 200px;
+    background-color: #373737;
+    justify-content: space-between;
+    padding: 10px;
+    align-content: center;
 }
+
+.tab > div {
+    display: flex;
+    align-items: center;
+}
+
+
+.tab p {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #e3e3e3;
+    margin: 0 5px;
+}
+
+.tab i {
+    color: #c3c3c3;
+}
+
+.tab > div:hover i,
+.tab > div:hover p {
+    color: #ffffff;
+}
+
+
+
+
+
+.active {
+    background-color: #1f1f1f;
+}
+
+.tab .x{
+    color: #c3c3c3;
+}
+
+.tab .x:hover{
+    color:white;
+}
+
 #breadcrumbs{
     height:23px;
     background-color:#161616;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
 }
+
+
+#breadcrumbs a{
+    color:rgb(0,88,169);
+}
+#breadcrumbs span{
+    margin:0 10px;
+    
+}
+
+
 textarea{
     box-sizing: border-box;
     width:100%;
@@ -87,7 +298,25 @@ textarea{
     overflow-y:auto;
 }
 footer{
-    height:16px;
+    height:14px;
     background-color:#0254A0;
+    display:flex;
+    flex-direction: row;
+    
 }
-
+footer p{
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    margin: 2px 0 10px 15px;
+    color: white;
+}
+footer i{
+    margin-left:1440px;
+    margin-top:6px;
+    width: 12px;
+    color:#c3c3c3
+}
+footer i:hover{
+    color:white;
+}

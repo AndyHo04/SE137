@@ -5,30 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 6 | Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f5e4fa545.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
     <main>
-        <header></header>
+        <header>
+            <div>
+                <p id="start">File</p>
+                <p >Edit</p>
+                <p >Help</p>
+                <p id="heading">Week 6 Assignment</p>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </header>
         <section>
             <aside>
-                <button>B</button>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <i class="fa-regular fa-square square"></i>
+                <i class="fa-solid fa-trash-can trashcan"></i>
+
             </aside>
             <div class="tray">
-                <div>
-                    adsfa sdf asdf
-                </div>
+                <details open>
+                    <summary class="border">Files</summary>
+                    <ul id="file">
+                        <li>File 1</li>
+                        <li>File 1</li>
+                        <li>File 1</li>
+                        <li>File 1</li>
+                    </ul>
+                </details>
+                
+                <details open>
+                    <summary class="border">Other Stuff</summary>
+                    <ul id="otherstuff">
+                        <li>Stuff 1</li>
+                        <li>Stuff 2</li>
+                    </ul>
+                </details>
             </div> 
             <div id="program">
                 <nav>
-                    <button class="active">Tab 1</button>
-                    <button>Tab 2</button>
-                    <button>Tab 3</button>
+                    <div class="tab active">
+                        <div>
+                            <i class="fa-solid fa-plane-up airplane"></i>
+                            <p>Tab 1</p>
+                        </div>
+                        <i class="fa-solid fa-x x"></i>
+                    </div>
+                    <div class="tab">
+                        <div>
+                            <i class="fa-solid fa-plane-up airplane"></i>
+                            <p>Tab 2</p>
+                        </div>
+                        <i class="fa-solid fa-x x"></i>
+                    </div>
+                    <div class="tab">
+                        <div>
+                            <i class="fa-solid fa-plane-up airplane"></i>
+                            <p>Tab 3</p>
+                        </div>
+                        <i class="fa-solid fa-x x"></i>
+                    </div>
                 </nav>
-                <div id="breadcrumbs"></div>
+                <div id="breadcrumbs">
+                    <a href = "#">SE 137</a>
+                    <span> > </span>
+                    <a href = "#">W6</a>
+                    <span> > </span>
+                    <a href = "#">Homework</a>
+                    <span> > </span>
+                    <a id="active-tab" href="#"></a>
+                </div>
                 <textarea></textarea>
             </div>
         </section>
-        <footer></footer>
+        <footer>
+           <p>Text goes</p>
+           <i class="fa-solid fa-signal fa-xs"></i>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>
