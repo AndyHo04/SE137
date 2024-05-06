@@ -47,6 +47,9 @@ thead{
     td{
           font-size: 1em;
     }
+    tr:first-child{
+        display: table-row;
+    }
     tr:last-child{
         display: none;
     }
