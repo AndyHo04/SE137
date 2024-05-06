@@ -55,9 +55,12 @@ section{
 aside{
     background-color:#505050;
     width:45px;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+=======
+>>>>>>> d62294c5b2c8ab1695d3749fafa02655000c455a
 }
 
 aside button{
