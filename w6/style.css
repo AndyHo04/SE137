@@ -55,9 +55,12 @@ section{
 aside{
     background-color:#505050;
     width:45px;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+=======
+>>>>>>> d62294c5b2c8ab1695d3749fafa02655000c455a
 }
 
 aside button{
@@ -84,8 +87,8 @@ aside img{
     height: 32px;
 }
 .square{
-    margin-top: -520px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-left: 12px;
     width: 26px;
     height: 32px;
     color: #c3c3c3;
@@ -96,9 +99,10 @@ aside img{
 }
 
 .trashcan{
-    
+    position: absolute;
     color: #c3c3c3;
-    margin-left: 15px;
+    bottom: 0;
+    left: 15px;
     width:32px;
     height:32px;
 }
@@ -254,11 +258,6 @@ nav button p{
 .tab > div:hover p {
     color: #ffffff;
 }
-
-
-
-
-
 .active {
     background-color: #1f1f1f;
 }
@@ -285,10 +284,7 @@ nav button p{
 }
 #breadcrumbs span{
     margin:0 10px;
-    
 }
-
-
 textarea{
     box-sizing: border-box;
     width:100%;
@@ -321,8 +317,6 @@ footer i{
     width: 12px;
     color:#c3c3c3;
     position: absolute;
-
-
 }
 footer i:hover{
     color:white;
