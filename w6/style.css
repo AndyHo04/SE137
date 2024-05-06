@@ -55,7 +55,6 @@ section{
 aside{
     background-color:#505050;
     width:45px;
-    
 }
 
 aside button{
@@ -94,9 +93,10 @@ aside img{
 }
 
 .trashcan{
+    position: absolute;
     color: #c3c3c3;
-    margin-left:15px;
-    margin-top:580px;
+    bottom: 0;
+    left: 15px;
     width:32px;
     height:32px;
 }
@@ -299,6 +299,7 @@ textarea{
     overflow-y:auto;
 }
 footer{
+    position: relative;
     height:14px;
     background-color:#0254A0;
     display:flex;
@@ -313,10 +314,13 @@ footer p{
     color: white;
 }
 footer i{
-    margin-left:1440px;
-    margin-top:6px;
+    right: 0;
+    top:6px; 
     width: 12px;
-    color:#c3c3c3
+    color:#c3c3c3;
+    position: absolute;
+
+
 }
 footer i:hover{
     color:white;
