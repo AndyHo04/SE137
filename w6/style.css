@@ -239,6 +239,10 @@ nav button p{
     align-items: center;
 }
 
+.tab:hover {
+    background-color: grey;
+}
+
 
 .tab p {
     font-family: "Roboto", sans-serif;

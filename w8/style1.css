@@ -1,1 +1,33 @@
+@charset "UTF-8";
 
+html{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    margin:0;
+}
+
+.row {
+    gap: 5px;
+}
+
+.container .row > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+#table-width{
+    width: 95%;
+    margin: auto;
+}
+
+.table-bordered.border-danger, .table-bordered.border-danger th, .table-bordered.border-danger td {
+    border:5px solid red !important;
+    border-color: red !important;
+}
