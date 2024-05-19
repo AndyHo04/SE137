@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 h1 {
-    margin-left: 670px;
+    display: flex;
     color: rgb(40, 122, 238);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 20px;
+    justify-content: center;
 }
 h2 {
     border: 3px solid grey;
