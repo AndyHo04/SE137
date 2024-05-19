@@ -89,7 +89,7 @@ h1{
     width:230px;
     height: 190px;
     margin: 0 0 40px 10px;
-    background-image:linear-gradient(rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.1)), url("C:/Users/andyh/OneDrive/Desktop/SE137/w2/images/School.jpg");
+    background-image:linear-gradient(rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.1)), url("../w2/images/School.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -131,7 +131,7 @@ h1{
     border: 3px solid rgb(31, 118, 220);
     width: 400px;
     height: 190px;
-    background-image:url("C:/Users/andyh/OneDrive/Desktop/SE137/w2/images/hobbies.png");
+    background-image:linear-gradient(rgba(255, 255, 255,0.1), rgba(255, 255, 255, 0.1)), url("../w2/images/hobbies.png");
     background-size: 100%;
     background-repeat: no-repeat;
 
