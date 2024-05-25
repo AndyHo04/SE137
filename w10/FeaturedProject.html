@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Featured Project</title>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f5e4fa545.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        html, body{
+            font-family: "Inter", sans-serif;
+        }
+
+        .w-poster{
+            width:722px;
+        }
+
+        .h-poster{
+            height: 413px;
+        }
+    </style>
+</head>
+<body class="bg-background container">
+    <nav class="bg-header w-lvw h-24 flex flex-row sm:flex-row justify-between">
+        <h1 class="text-2xl sm:text-4xl text-white font-bold mt-1 sm:mt-5 ml-3"><a href="Home.html">Andy Ho | Software Engineer</a></h1>
+        <div class="lg:hidden block">
+            <button id="menu-button" class="flex items-center mr-5 px-3 py-2 w-14 h-20 text-black">
+              <i class="fa-solid fa-bars text-4xl"></i>
+            </button>
+        </div>
+        <div id="dropdown" class="lg:block hidden">
+            <div class="flex justify-between mt-5">
+                <a href="FeaturedProject.html" class="text-link text-2xl underline mr-5">Featured Project</a>
+                <a href="Projects.html" class="text-link text-2xl underline mr-10">Projects</a>
+            </div>
+        </div>
+    </nav>
+    <section class=>
+        <h2 class="text-white text-5xl flex justify-center mt-3"><b>Featured Project</b></h2>
+        <div class="flex flex-col sm:flex-row">
+            <div class="mt-32 ml-20 sm:ml-12 flex flex-col w-96">
+                <h3 class="text-white text-3xl"><b>Camp Crystal Lake, 2024</b></h3>
+                <hr class="bg-white w-96 h-0.5 mt-2">
+                <a href="https://se137-a-ho.netlify.app/w4/w4lab.html" target="_blank" class="text-link underline text-3xl sm:text-2xl ml-20 sm:ml-24 mt-3"><b>Link to Project</b></a>
+                <a href="https://github.com/AndyHo04/SE137/blob/main/w4/W4lab.html" target="_blank" class="text-link underline text-3xl sm:text-2xl ml-2 sm:ml-10 mt-8"><b>Link to Project on Github</b></a>
+                <p class="text-white text-xl mt-10 whitespace-normal">Camp Crystal Lake Design is a design layout made as a poster or image to 
+                look at using HTML and CSS. The design is made using flex grids. The banner in the top left is a banner of serial killer Jason Voorhees in a grave yard. There is a timeline of Crystal Lake in the right column.  The bottom left is a flag of Camp Crystal. The bottom right is a image of Friday the 13th and a dvd with the price on Amazon. </p>
+            </div>
+            <img src="../w10/images/Poster.png" alt="Poster of Camp Crystal Lake" class="w-poster h-poster mt-10 sm:mt-44 sm:ml-72">
+        </div>
+    </section>
+    <nav class="bg-header mt-40 sm:mt-10 w-lvw h-96 sm:h-36 flex flex-col sm:flex-row">
+        <div class="flex flex-col">
+            <h3 class="text-2xl text-white ml-36">GitHub Repository</h3>
+            <hr class="bg-white w-80 h-0.5 ml-20 mt-2">
+            <a href="https://github.com/AndyHo04/SE137" target="_blank" class="text-link underline ml-44 mt-1 text-2xl">Repository</a>
+        </div>
+        <div class="flex flex-col">
+            <h3 class="text-2xl text-white mt-5 sm:mt-0 ml-40 sm:ml-72">Pixso Design</h3>
+            <hr class="bg-white w-80 h-0.5 ml-20 sm:ml-52 mt-2">
+            <a href="https://pixso.net/app/editor/s-tmPT_QKQVswJ7Rzgi5dQ?icon_type=1&page-id=0%3A1" target="_blank" class="text-link underline 
+            ml-48 sm:ml-80 mt-1 text-2xl">Design</a>
+        </div>
+        <div class="flex flex-col">
+            <h3 class="text-2xl text-white ml-36 sm:ml-72 mt-10 sm:mt-0">Socials/Contacts</h3>
+            <hr class="bg-white w-80 h-0.5 ml-20 sm:ml-56 mt-2">
+            <div class="flex flex-row justify-center mt-2 mr-14 sm:mr-0">
+                <a href="https://www.instagram.com/andyho14/?hl=en" target="_blank"><img src="../w10/images/instagram.webp" alt="instagram icon" class="w-16 h-16 flex sm:ml-56"></a>
+                <a href="https://www.facebook.com/profile.php?id=100084146138770" target="_blank"><img src="../w10/images/Facebook_icon.svg.png" alt="facebook icon" class="w-16 h-16 ml-5 sm:ml-5"></a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+        document.getElementById('dropdown').classList.toggle('hidden');
+        document.getElementById('dropdown').classList.toggle('lg:block');
+        });
+    </script>
+</body>
+</html>
