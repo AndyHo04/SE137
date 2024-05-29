@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f5e4fa545.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        html, body{
+            font-family: "Inter", sans-serif;
+        
+
+            
+        }
+
+    </style>
+
+</head>
+<body class="bg-background w-full  flex flex-col min-h-screen">
+    <nav class="bg-header w-full h-24 flex flex-row sm:flex-row justify-between">
+        <h1 class="text-2xl sm:text-4xl text-white font-bold mt-1 sm:mt-5 ml-3"><a href="HomeTesting.html">Andy Ho | Software Engineer</a></h1>
+        <div class="lg:hidden block">
+            <button id="menu-button" class="flex items-center mr-5 px-3 py-2 w-14 h-20 text-black">
+                <i class="fa-solid fa-bars text-4xl"></i>
+            </button>
+        </div>
+        <div id="dropdown" class="flex-col sm:flex-row lg:block hidden">
+            <div class="flex justify-between mt-5">
+                <a href="FeaturedProject1.html" class="text-link text-2xl underline mr-5">Featured Project</a>
+                <a href="Projects1.html" class="text-link text-2xl underline mr-10">Projects</a>
+            </div>
+        </div>
+    </nav>
+    <section class="flex flex-col sm:flex-row flex-grow">
+        <img src="../w10/images/Graduation photo.jpg" alt="Graduation photo" class="ml-2 sm:ml-0">
+        <div class="flex flex-col px-5 pt-3">
+            <div class="flex flex-col items-center text-center">
+                <h2 class="text-5xl text-white"><b>About Me</b></h2>
+                <hr class="bg-white w-96 h-0.5 mt-2">
+                <p class="text-white text-2xl mt-2">I am currently a Software Engineering student at New England Institute of Technology and I am set to graduate with my bachelors in the summer of 2026. I currently have knowledge of the languages Python, HTML, CSS, C#,  and SQL. I have enjoyed learning about software development and am excited to learn more during my education. If you have any questions please contact me through my contacts.</p>
+            </div>
+            <div class="flex flex-col items-center text-center mt-10">
+                <h2 class="text-5xl text-white"><b>Featured Project</b></h2>
+                <hr class="bg-white w-96 h-0.5 mt-2">
+                <h3 class="text-2xl text-white mt-3"><i>Camp Crystal Lake, 2024</i></h3>
+                <p class="text-white text-2xl mt-5 whitespace-normal">Camp Crystal Lake Design is a designed image/poster of the film series Camp Crystal Lake.</p>
+            </div>
+            <img src="../w10/images/CampCrystalLake.jpg" alt="Camp Crystal Lake, 2024" class="w-80 h-80 mx-auto mt-5 mb">
+        </div>
+        
+     </section>
+    <nav class="bg-header justify-center w-full h-96 sm:h-36 flex flex-col sm:flex-row">
+        <div class="flex justify-between flex-col sm:flex-row w-full items-center">
+            <div class="flex flex-col items-center w-1/3">
+                <h3 class="text-2xl text-white mx-auto text-center sm:text-left">GitHub Repository</h3>
+                <hr class="bg-white w-80 h-0.5 mt-2">
+                <a href="https://github.com/AndyHo04/SE137" target="_blank" class="text-link underline mt-1 text-2xl">Repository</a>
+            </div>
+            <div class="flex flex-col items-center w-1/3 mt-5 sm:mt-0">
+                <h3 class="text-2xl text-white" >Pixso Design</h3>
+                <hr class="bg-white w-80 h-0.5 mt-2">
+                <a href="https://pixso.net/app/editor/s-tmPT_QKQVswJ7Rzgi5dQ?icon_type=1&page-id=0%3A1" target="_blank" class="text-link underline mt-1 text-2xl">Design</a>
+            </div>
+            <div class="flex flex-col items-center w-1/3 mt-5 sm:mt-0">
+                <h3 class="text-2xl text-white">Socials/Contacts</h3>
+                <hr class="bg-white w-80 h-0.5 mt-2">
+                <div class="flex flex-row justify-center mt-2">
+                    <a href="https://www.instagram.com/andyho14/?hl=en" target="_blank"><img src="../w10/images/instagram.webp" alt="instagram icon" class="w-16 h-16"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100084146138770" target="_blank"><img src="../w10/images/Facebook_icon.svg.png" alt="facebook icon" class="w-16 h-16 ml-5"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <script>
+            document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('dropdown').classList.toggle('hidden');
+            document.getElementById('dropdown').classList.toggle('lg:block');
+            });
+        </script>
+            
+</body>
+</html>
