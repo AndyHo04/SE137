@@ -31,3 +31,7 @@ body{
     border:5px solid red !important;
     border-color: red !important;
 }
+
+.custom-navbar-height {
+    height: 100px; /* Adjust the height as needed */
+}
