@@ -16,7 +16,7 @@ html, body {
 .table-bordered.border-danger,
 .table-bordered.border-danger th,
 .table-bordered.border-danger td {
-    border: 2px solid red !important;
+    border: 5px solid red !important;
 }
 
 .table td, .table th {
